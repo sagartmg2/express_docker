@@ -1,0 +1,19 @@
+# // name  services
+#   //build
+#   //port
+#   // volumes
+#   // create container
+#   // run
+
+
+services:
+  backend:
+    build: 
+      context: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/server
+      - /server/node_modules
+    
+    
